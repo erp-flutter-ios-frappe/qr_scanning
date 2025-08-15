@@ -25,7 +25,6 @@ def send_otp(phoneNo):
 	reply['message']=''
 	reply['data']=''
 
-
 	try:
 		otpobj=frappe.db.get("UserOTP", {"mobile": phoneNo})
 		if otpobj:
@@ -70,13 +69,13 @@ def sign_up(**kwargs):
 	parameters=frappe._dict(kwargs)
 	allKeys = parameters.keys()
 
-	if 'phoneNo' in allKeys:
+	if 'phoneNo' not in allKeys:
 		frappe.local.response['http_status_code'] = 500
 		reply["status_code"]=500
 		reply["message"]="Phone number not found."
 		return reply
 
-	if 'otp' in allKeys:
+	if 'otp' not in allKeys:
 		frappe.local.response['http_status_code'] = 500
 		reply["status_code"]=500
 		reply["message"]="OTP not found."
@@ -133,7 +132,7 @@ def sign_up(**kwargs):
 
 			#update customer
 			query = "UPDATE `tabCustomer` SET `customer_name`='{}' WHERE `name`='{}'".format(customerName,phoneNo)
-			customer_list = frappe.db.sql(query,as_dict=1)
+			customer_update = frappe.db.sql(query,as_dict=1)
 
 			# frappe.db.sql("""UPDATE `tabCustomer` SET `customer_name`='"""+customerName+"""' WHERE `name`='"""+phoneNo+"""'""")
 			reply['data'] = customer_list[0]

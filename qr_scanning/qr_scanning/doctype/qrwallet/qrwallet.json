@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-15 22:09:04.875473",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "amount",
+  "paid_amount",
+  "remain_amount",
+  "paid_reference",
+  "user",
+  "status"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "amount",
+   "fieldtype": "Float",
+   "label": "Amount"
+  },
+  {
+   "default": "0",
+   "fieldname": "paid_amount",
+   "fieldtype": "Float",
+   "label": "Paid Amount"
+  },
+  {
+   "default": "0",
+   "fieldname": "remain_amount",
+   "fieldtype": "Float",
+   "label": "Remain Amount"
+  },
+  {
+   "fieldname": "paid_reference",
+   "fieldtype": "Data",
+   "label": "Paid Reference"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Data",
+   "label": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-15 22:18:08.263945",
+ "modified_by": "Administrator",
+ "module": "qr_scanning",
+ "name": "QRWallet",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

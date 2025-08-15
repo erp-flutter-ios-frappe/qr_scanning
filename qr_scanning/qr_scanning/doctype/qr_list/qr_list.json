@@ -10,12 +10,16 @@
   "qrcode",
   "reward_type",
   "reward_amount",
+  "column_break_4",
+  "scan_user",
+  "wallet",
   "section_break_4",
   "scan_date",
   "scan_time",
+  "scan_device",
+  "column_break_10",
   "scan_lat",
-  "scan_long",
-  "scan_device"
+  "scan_long"
  ],
  "fields": [
   {
@@ -29,14 +33,12 @@
   {
    "fieldname": "reward_type",
    "fieldtype": "Data",
-   "label": "Reward Type",
-   "read_only": 1
+   "label": "Reward Type"
   },
   {
    "fieldname": "reward_amount",
    "fieldtype": "Data",
-   "label": "Reward Amount",
-   "read_only": 1
+   "label": "Reward Amount"
   },
   {
    "fieldname": "section_break_4",
@@ -66,11 +68,30 @@
    "fieldname": "scan_device",
    "fieldtype": "Data",
    "label": "Scan Device"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "scan_user",
+   "fieldtype": "Data",
+   "label": "Scan user"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "wallet",
+   "fieldtype": "Data",
+   "label": "Wallet",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-15 15:45:16.714700",
+ "modified": "2025-08-15 22:13:49.607495",
  "modified_by": "Administrator",
  "module": "qr_scanning",
  "name": "QR List",
