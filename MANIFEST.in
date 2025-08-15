@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include qr_scanning *.css
+recursive-include qr_scanning *.csv
+recursive-include qr_scanning *.html
+recursive-include qr_scanning *.ico
+recursive-include qr_scanning *.js
+recursive-include qr_scanning *.json
+recursive-include qr_scanning *.md
+recursive-include qr_scanning *.png
+recursive-include qr_scanning *.py
+recursive-include qr_scanning *.svg
+recursive-include qr_scanning *.txt
+recursive-exclude qr_scanning *.pyc
