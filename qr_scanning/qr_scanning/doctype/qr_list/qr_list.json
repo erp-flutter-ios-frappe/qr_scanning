@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:qrcode",
+ "creation": "2025-08-15 15:38:39.673015",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "qrcode",
+  "reward_type",
+  "reward_amount",
+  "section_break_4",
+  "scan_date",
+  "scan_time",
+  "scan_lat",
+  "scan_long",
+  "scan_device"
+ ],
+ "fields": [
+  {
+   "fieldname": "qrcode",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "QRCode",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "reward_type",
+   "fieldtype": "Data",
+   "label": "Reward Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reward_amount",
+   "fieldtype": "Data",
+   "label": "Reward Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "scan_date",
+   "fieldtype": "Date",
+   "label": "Scan Date"
+  },
+  {
+   "fieldname": "scan_time",
+   "fieldtype": "Time",
+   "label": "Scan Time"
+  },
+  {
+   "fieldname": "scan_lat",
+   "fieldtype": "Data",
+   "label": "Scan Lat"
+  },
+  {
+   "fieldname": "scan_long",
+   "fieldtype": "Data",
+   "label": "Scan Long"
+  },
+  {
+   "fieldname": "scan_device",
+   "fieldtype": "Data",
+   "label": "Scan Device"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-15 15:45:16.714700",
+ "modified_by": "Administrator",
+ "module": "qr_scanning",
+ "name": "QR List",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
